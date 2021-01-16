@@ -15,7 +15,12 @@ input[type=text]:focus{
     background: rgb(72, 0, 105);
 }
 
-
+input[type=date],
+input[type=date]:focus{
+    color: #fff;
+    border: none;
+    background: rgb(72, 0, 105);
+}
 
 .to-dos li{
     background: rgba(72, 0, 105, 0.562);
