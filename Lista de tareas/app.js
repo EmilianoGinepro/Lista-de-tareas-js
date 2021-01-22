@@ -1,26 +1,33 @@
 //agregar una nueva tarea
-const addForm = document.querySelector('.add');
+document.getElementById("btn_aceptar").addEventListener('click',() =>{    
+let Tarea = document.getElementById('agregar');
+let Fecha = document.getElementById('fecha');
+if(Tarea.value ==='' || Fecha.value ===''){
+    return false;
+}
 
+var nuevaTarea = {
+    Tarea: Tarea.value,
+    Fecha: Fecha.value, 
+    }
+    
+    generarTemplate(nuevaTarea);
+    Tarea.value = ''
+    Fecha.value = ''   
+})
+  
+//generar html y agregar el objeto
 const lista = document.querySelector('.to-dos');
 
-const generarTemplate = toDo =>{
-    const html =  `
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-        <span>${toDo}</span>
+const generarTemplate = tareaNueva =>{
+    const html =  
+    `<li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>${tareaNueva.Tarea}  ${tareaNueva.Fecha}</span>
         <i class="far fa-trash-alt delete"></i>
-    </li>
-    `;
+    </li>`;
     lista.innerHTML +=html;
 };
 
-addForm.addEventListener('submit', e => {
-    e.preventDefault();
-    const nuevaTarea = addForm.add.value.trim();
-    if(nuevaTarea.length){
-        generarTemplate(nuevaTarea);
-        addForm.reset();
-    }
-});
 
 //borrar tareas
 lista.addEventListener('click', e=>{

@@ -22,6 +22,16 @@ input[type=date]:focus{
     background: rgb(72, 0, 105);
 }
 
+.btn-success:hover{
+    background: rgb(72, 0, 105);
+}
+.btn-success{
+    color: #fff;
+    border: none;
+    background: rgb(72, 0, 105);    
+    
+}
+
 .to-dos li{
     background: rgba(72, 0, 105, 0.562);
 }
