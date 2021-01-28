@@ -15,8 +15,8 @@ input[type=text]:focus{
     background: rgb(72, 0, 105);
 }
 
-input[type=date],
-input[type=date]:focus{
+input[type=datetime-local],
+input[type=datetime-local]:focus{
     color: #fff;
     border: none;
     background: rgb(72, 0, 105);
