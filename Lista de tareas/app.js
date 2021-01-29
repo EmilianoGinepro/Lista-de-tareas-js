@@ -7,9 +7,6 @@ let tareaValor = Tarea.value;
 let Fecha = document.getElementById('fecha').value;
 let fechaValor = new Date(Fecha).toLocaleDateString()
 
-console.log(fechaValor);
-
-
 if(Tarea.value ==='' || Fecha.value ===''){
     return false;
 }
@@ -18,7 +15,7 @@ var nuevaTarea = {
     Tarea: tareaValor,
     Fecha: fechaValor, 
     }
-    console.log(nuevaTarea);
+  
     generarTemplate(nuevaTarea);
     
     Tarea.value = ''
@@ -46,9 +43,3 @@ lista.addEventListener('click', e=>{
     }
 })
 
-/*
-   Trabajar el formato del  date
-1-Busca moment.js
-2-convierte el date en toLocaleString(), toma los 10 primeros con slice , con slipt separa lo por '/' y lo construyes a tu manera en una cadena
-3-Busca en Google los formatos que te da dateTimePicker, junto con jquery puedes establecer el formato que desees recuperar.
-*/
