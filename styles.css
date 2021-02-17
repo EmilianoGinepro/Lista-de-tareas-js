@@ -1,0 +1,45 @@
+cuerpo {
+    color de fondo : # 21d4fd ;
+    imagen de fondo : gradiente lineal ( 19 grados , # 21D4FD  0 % ,  # B721FF  100 % );
+    altura : 100 vh ;
+}
+
+. contenedor {
+    ancho máximo : 500 px ;
+}
+
+entrada [ tipo = texto ] ,
+input [ type = text ]: focus {
+    color : # fff ;
+    borde : ninguno;
+    fondo : rgb ( 72 ,  0 ,  105 );
+}
+
+input [ type = datetime-local ] ,
+input [ type = datetime-local ]: focus {
+    color : # fff ;
+    borde : ninguno;
+    fondo : rgb ( 72 ,  0 ,  105 );
+}
+
+. btn-success : hover {
+    fondo : rgb ( 72 ,  0 ,  105 );
+}
+. btn-success {
+    color : # fff ;
+    borde : ninguno;
+    fondo : rgb ( 72 ,  0 ,  105 );    
+    
+}
+
+. to-dos  li {
+    fondo : rgba ( 72 ,  0 ,  105 ,  0.562 );
+}
+
+. eliminar {
+    cursor : puntero;
+}
+
+. filterOut {
+    pantalla : ninguna;
+}
