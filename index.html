@@ -1,0 +1,47 @@
+<! DOCTYPE html >
+< html  lang = " en " >
+< cabeza >
+    < meta  charset = " UTF-8 " >
+    < meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " >
+    < meta  http-equiv = " x-UA-compatible " content = " ie = edge " >
+    < link  rel = " stylesheet " href = " https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css " >
+    < Enlace  rel = " hoja de estilo " href =" https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css " integridad =" SHA384-ggOyR0iXCbMQv3Xipma34MD + dH / 1fQ784 / j6cY / iJTQUOhcWr7x9JvoRxT2MZw1T " crossorigin = " anónimo " >
+    < link  rel = " stylesheet " href = " styles.css " >
+    < título > Lista de tareas </ título >
+</ cabeza >
+< cuerpo >
+    < div  class = " contenedor " >
+        < header  class = " text-center text-light my-4 " >
+            < h2  class = " mb-4 " > Lista de tareas </ h2 >
+            < div  class = " form-group add text-center my-4 " >
+                < label  for = "" class = " text-ligth " > Añadir una nueva tarea: </ label >
+                < input  type = " text " class = " form-control " name = " agregar " id = " agregar " >
+            </ div >   
+            < form  class = " agregar text-center my-4 " >
+                < label  for = "" class = " text-ligth " > Fecha de inicio: </ label >
+                < input  type = " datetime-local " class = " form-control " id = " fecha " name = " fecha " >
+            </ formulario >
+            < div  class = " text-center text-light my-4 " >
+                < div  class = " btn btn-success " type = " button " id = " btn_aceptar " > Agregar </ div >
+            </ div >
+        </ encabezado >
+        < ul  class = " list-group text-light to-dos " >
+            < li  class = " lista-grupo-elemento d-flex justificar-contenido-entre alinear-elementos-centro " >
+                < span > Estudiar para las clases 13/1/2021 </ span >
+                < i  class = " far fa-trash-alt delete " > </ i >
+            </ li >
+            < li  class = " lista-grupo-elemento d-flex justify-content-between align-iteams-center " >
+                < span > Practicar deporte 4/2/2021 </ span >
+                < i  class = " far fa-trash-alt delete " > </ i >
+            </ li >
+            < li  class = " lista-grupo-elemento d-flex justificar-contenido-entre alinear-elementos-centro " >
+                < span > Cocinar 2/6/2021 </ span >
+                < i  class = " far fa-trash-alt delete " > </ i >
+            </ li >
+        </ ul >             
+    </ div >
+
+    
+    < script  src = " app.js " > </ script >
+</ cuerpo >
+</ html >
